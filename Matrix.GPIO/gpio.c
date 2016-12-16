@@ -4,10 +4,14 @@
 #include "libfahw-gpio.h"
 
 static int gpio_mode = MODE_UNKNOWN;
-static int pinGPIO[GPIO_MAX_NUM+1] = {-1, -1, -1, 99, -1, 98, -1,  60, 117, -1, 113,
-        61, 58, 62, -1, 63, 78,  -1,  59, 95, -1,
-        96, 97, 93, 94, -1, 77, 103, 102, 72, -1,
-        73, 92, 74, -1, 76, 71,  75, 162, -1, 163,
+
+ // Todo : other board competitive
+ // Note : pinGOIO is for NanoPi M1
+static int pinGPIO[GPIO_MAX_NUM+1] = {
+        -1, -1, -1, -1, -1, -1,  -1, 203, 198, -1, 199,
+        0,  6,  2, -1,  3, 200,  -1, 201, -1, -1,
+        -1,  1, -1, -1, -1,  -1,  -1,  -1, 20, -1,
+        21,  7,  8, -1, 16,  13,   9,  15, -1, 14,
 };
 static int is_exported[GPIO_MAX_NUM+1];
 
